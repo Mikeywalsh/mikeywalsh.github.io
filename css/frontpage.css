@@ -1,0 +1,11 @@
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-image: url(../images/header-background.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: repeat;
+	border-radius: 0px;
+}
