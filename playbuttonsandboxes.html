@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Buttons and Boxes Demo</title>
+    <link rel="shortcut icon" href="Demos/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="Demos/TemplateData/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Demos/TemplateData/UnityProgress.js"></script>
+    <script src="Demos/Buttons_And_Boxes/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Demos/Buttons_And_Boxes/Web_Build.json", {onProgress: UnityProgress});
+    </script>
+</head>
+<body>
+    <div class="text-center">
+        <a href="index.html" class="btn btn-primary" style="margin-top: 18px" role="button">Back to Homepage</a>
+		<h3>
+	      Saving of user made levels and sharing with other</br>
+		  players has been disabled for this WebGL demo build
+		</h3>
+    </div>
+    <div class="webgl-content" style="margin-top: 50px">
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+            <div class="title">Buttons and Boxes</div>
+        </div>
+    </div>
+</body>
+</html>
